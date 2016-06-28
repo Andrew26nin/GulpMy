@@ -15,7 +15,7 @@
   "bugs": {
     "url": "https://github.com/Andrew26nin/GulpMy/issues"
   },
-  "homepage": "https://github.com/Andrew26nin/GulpMy#readme"
+  "homepage": "https://github.com/Andrew26nin/GulpMy#readme",
   "devDependencies": {
     "browser-sync": "^2.13.0",
     "del": "^2.2.1",
