@@ -1,0 +1,286 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+	display: block;
+}
+body {
+	font: 12px/18px Arial, sans-serif;
+	width: 100%;
+	background:#cecece;
+}
+.wrapper {
+	width: 1024px;
+	margin: 0 auto;
+	box-shadow:0px 0px  30px #626262;
+	background:#fff;
+}
+
+
+/* Header
+-----------------------------------------------------------------------------*/
+.header {
+	height:129px;
+	background: url(../img/head-bg.jpg);
+	color:#fff;
+}
+
+#logo {
+float:left;
+padding:16px 0 0 35px;
+}
+
+#head-txt {
+font-size:30px;
+text-shadow:2px 2px 2px  #231f20;
+padding:79px 0 0 32px;
+width:500px;
+}
+
+#head-phone {
+float: right;
+font-size: 41px;
+line-height: 25px;
+position: relative;
+right: 50px;
+text-align: right;
+top: -74px;
+text-shadow:1px 1px 1px  #231f20;
+
+}
+
+#head-phone a {
+font-size:16px;
+color:#fff;
+text-shadow:none;
+}
+
+#content-txt {
+float: right;
+font-size: 18px;
+line-height: 23px;
+padding: 0px 54px;
+text-align: right;
+width: 365px;
+position: relative;
+top: 18px;
+}
+
+#content-txt b {
+text-transform:italic;
+}
+
+
+
+/* Middle
+-----------------------------------------------------------------------------*/
+.content {
+height:500px;
+background:url(../img/main-image.jpg);
+}
+
+#content-h {
+font-size:38px;
+color:#003471;
+text-shadow:1px 1px 1px  #231f20;
+font-weight:bold;
+padding:0 0 0 34px;
+height:52px;
+line-height:0px;
+}
+
+#content-2-h {
+font-size:32px;
+color:#fff;
+text-shadow:1px 1px 1px  #231f20;
+font-weight:bold;
+padding:20px 0 0 34px;
+}
+
+
+#content-2-txt p {
+color:#fff;
+font-size:18px;
+width:938px;
+padding:15px 0 0 34px;
+line-height:22px;
+text-shadow:1px 0px 1px  #231f20;
+}
+
+.order-button {
+background: url("../img/redbutton.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+border: medium none;
+color: #fff;
+font-size: 31px;
+font-weight: bold;
+height: 98px;
+left: 632px;
+line-height: 37px;
+padding-top: 22px;
+position: relative;
+text-align: center;
+text-shadow: 2px 1px 1px #231f20;
+top: 298px;
+width: 336px;
+display: block;
+text-decoration: none;
+}
+
+.clock-ite {
+height:136px;
+background:url(../img/watch.png);
+position:relative;
+top:290px;
+}
+
+.clock-2-ite {
+height:136px;
+background:url(../img/watch.png);
+position:relative;
+top:-37px;
+}
+
+#content-2 {
+height:469px;
+background:url(../img/second-image.jpg);
+}
+
+#content-2-txt {
+height:162px;
+background:rgba(0,0,0, 0.43);
+position:relative;
+top:116px;
+}
+
+.days20 {
+font-family: 'Georgia',Cambria,Times New Roman,Times,serif;
+font-size: 36px;
+font-style: italic;
+font-weight: bold;
+line-height: 38px;
+position: relative;
+text-align: center;
+top: -40px;
+}
+
+.days20  span {
+color:#ff0000;
+}
+
+
+
+
+/* Footer
+-----------------------------------------------------------------------------*/
+.footer {
+	height:97px;
+	background: url(../img/head-bg.png);
+	color:#fff;
+}
+
+#footer-txt {
+font-size:36px;
+text-shadow:2px 2px 2px  #231f20;
+padding:34px;
+width:800px;
+float:left;
+}
+
+#footer-ul {
+font-size:16px;
+padding:15px 34px;
+line-height:20px;
+}
+
+#footer-ul p {
+padding:10px 0 1px;
+}
+
+#footer-gray {
+height:215px;
+background:#808080;
+font-size:27px;
+color:#fff;
+text-align:center;
+line-height:60px;
+padding-top:24px;
+}
+
+#footer-gray p {
+font-size:76px;
+}
+
+#footer-gray a {
+font-size:31px;
+color:#fff;
+}
+
+#footer-white {
+font-size:16px;
+padding:20px 0 40px 34px;
+width:800px;
+line-height:20px;
+}
+
+#footer-blue {
+height:40px;
+background:url(../img/head-bg.png);
+color:#fff;
+padding:13px;
+}
+
+#footer-blue table tr {
+vertical-align:top;
+}
+
+#footer-blue table td {
+padding-left:20px;
+}
+
+
+/* Form
+-----------------------------------------------------------------------------*/
+
+#form-ite {
+width:355px;
+height:400px;
+background:#fff;
+font-size:16px;
+}
+
+#form-header {
+background:url(../img/form-header.jpg);
+width:341px;
+height:20px;
+color:#fff;
+padding:7px;
+text-shadow:2px 2px 2px  #231f20;
+}
+
+.form-label {
+padding:15px 0 0 10px;
+display:block;
+}
+
+.form-input {
+width:285px;
+height:27px;
+border:solid 1px black;
+margin:10px 0 0 39px;
+padding: 0 10px;
+}
+
+.form-button {
+background: url("../img/button-send.jpg") repeat scroll 0 0 rgba(0, 0, 0, 0);
+color: #fff;
+height: 36px;
+padding:20px 0 0 30px;
+text-shadow: 1px 1px 1px #231f20;
+width: 124px;
+margin:11px 0 0 192px;
+cursor:pointer;
+}
+
+.fancybox-skin {padding: 0 !important;}
+.fancybox-wrap {width: 355px !important;}
