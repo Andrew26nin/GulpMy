@@ -34,14 +34,14 @@ gulp.task('browser-sync', function() {
     connect.server({}, function (){
         browserSync({
             proxy: 'localhost',
-            port: '8000',
+            port: '8001',
             ini:'C:/xampp/php.ini',
             notify: false // Отключаем уведомления
         });
     });
 });
 
-gulp.task('scripts', function() 
+gulp.task('scripts', function()
 {
     return gulp.src([ // Берем все необходимые библиотеки
     'app/libs/jquery/dist/jquery.min.js', // Берем jQuery
@@ -52,7 +52,7 @@ gulp.task('scripts', function()
     .pipe(gulp.dest('app/js')); // Выгружаем в папку app/js
 });
 
-gulp.task('css-libs', ['sass'], function() 
+gulp.task('css-libs', ['sass'], function()
 {
     return gulp.src('app/css/libs.css') // Выбираем файл для минификации
     .pipe(cssnano()) // Сжимаем
@@ -60,13 +60,12 @@ gulp.task('css-libs', ['sass'], function()
     .pipe(gulp.dest('app/css')); // Выгружаем в папку app/css
 });
 
-gulp.task('watch', ['browser-sync', 'css-libs', 'scripts'], function() 
-{
+gulp.task('watch', ['browser-sync', 'css-libs', 'scripts'], function()
+{   gulp.watch('app/*.php', browserSync.reload);
     gulp.watch('app/sass/**/*.*', ['sass']); // Наблюдение за sass файлами в папке sass
     gulp.watch('app/css/**/*.css', browserSync.reload ); // Наблюдение за sass файлами в папке sass
     gulp.watch('app/*.html', browserSync.reload); // Наблюдение за HTML файлами в корне проекта
     gulp.watch('app/js/**/*.js', browserSync.reload);   // Наблюдение за JS файлами в папке js
-    gulp.watch('app/*.php', browserSync.reload);
 });
 
 gulp.task('clean', function() {
@@ -116,5 +115,3 @@ gulp.task('clear', function () {
 
 
 gulp.task('default', ['watch']);
-
-
